@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@front/environment": ["libs/environment/src/index.ts"],
+      "@front/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@front/ibis-dev/feature-shell": [
+        "libs/ibis-dev/feature-shell/src/index.ts"
+      ],
+      "@front/ibis-dev/feature-page-home": [
+        "libs/ibis-dev/feature-page-home/src/index.ts"
+      ],
+      "@front/ibis-dev/services": ["libs/ibis-dev/services/src/index.ts"],
+      "@front/shared/pipes": ["libs/shared/pipes/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

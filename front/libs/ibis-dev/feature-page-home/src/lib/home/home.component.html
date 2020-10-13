@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="bg-header">
+    <div class="container-header">
+      <ibis-dev-item-header class="item-header"  *ngFor="let item of dataHeader" [item]="item"></ibis-dev-item-header>
+    </div>
+  </div>
+  <div class="bg-container">
+      <div class="container-featured">
+      <div class="featured">
+        <div class="dot"><div class="deep-dot"></div></div>
+        <h3>DESTACADOS</h3>
+      </div>
+      </div>
+    <div class="container-main">
+      <ng-container>
+        <ibis-dev-card-car class="car-card" *ngFor="let item of list" [car]="item"></ibis-dev-card-car>
+        <mat-paginator showFirstLastButtons [length]="total_item" [pageIndex]="pageIndex" [pageSize]="pageSize"
+                       [hidePageSize]="true" (page)="handlePage($event)">
+        </mat-paginator>
+      </ng-container>
+    </div>
+  </div>
+</div>

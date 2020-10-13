@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  height: 100vh;
+	font-family: $font-primary;
+	margin: 0;
+	overflow-x: hidden;
+	color: $bodyText;
+  background-color: aliceblue;
+	font-weight: 400;
+}
+* {
+	outline: none;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+}
+html {
+	position: relative;
+	min-height: 100%;
+	background: $white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+a.link {
+	color: $headingText;
+	&:hover,
+	&:focus {
+		color: $primary;
+	}
+}

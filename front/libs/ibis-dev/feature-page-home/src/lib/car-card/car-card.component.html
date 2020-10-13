@@ -1,0 +1,16 @@
+<mat-card class="car-card">
+  <mat-card-content>
+    <div class="container-image">
+      <img [src]="''|image" alt="image of car">
+      <div class="footer-image">
+        <mat-icon class="icon-door">video_label</mat-icon><span>{{car.doors}} Puertas</span>
+        <mat-icon class="icon-door">local_fire_department</mat-icon><span class="fuel-car">{{car.fuelType}}</span>
+      </div>
+    </div>
+    <p class="car-description cost-car">{{car.cost | currency:'ARS'}}</p>
+    <p class="car-description model-car">{{car.modelDescription}}</p>
+    <p class="car-description place-car">{{car.placeDescription}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>

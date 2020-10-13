@@ -1,0 +1,54 @@
+{
+  "npmScope": "front",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "MTM3N2U1MDMtNGMwNS00ODk3LTkzZDctMjhiMzkwYTk1N2FhfHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "ibisdev": {
+      "tags": []
+    },
+    "ibisdev-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ibisdev"]
+    },
+    "environment": {
+      "tags": []
+    },
+    "shared-data-access": {
+      "tags": []
+    },
+    "ibis-dev-feature-shell": {
+      "tags": []
+    },
+    "ibis-dev-feature-page-home": {
+      "tags": []
+    },
+    "ibis-dev-services": {
+      "tags": []
+    },
+    "shared-pipes": {
+      "tags": []
+    }
+  }
+}

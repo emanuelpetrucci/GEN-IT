@@ -1,0 +1,78 @@
+@import "mixin";
+
+.container {
+  width: 100%;
+
+  .bg-header {
+    background-color: white;
+  }
+  .bg-container {
+    background-color: aliceblue;
+  }
+
+  .container-featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 1rem 0;
+
+    .featured {
+      border: grey solid 1.5px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .dot {
+      position: absolute;
+      top: -11px;
+      padding: 3px;
+      height: 15px;
+      width: 15px;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .deep-dot {
+      background-color: grey;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0.3rem 0.7rem;
+      font-weight: 500;
+      color: grey;
+    }
+  }
+
+  .container-header, .container-main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include small {
+      width: 70%;
+    }
+
+    .item-header {
+      width: 100%;
+      @include small {
+        max-width: 25%;
+      }
+    }
+
+    .car-card {
+      width: 50%;
+      @include small {
+        max-width: 33%;
+      }
+    }
+  }
+
+}
